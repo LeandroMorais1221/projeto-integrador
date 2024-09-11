@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+/* Todas as páginas */
+*{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Menu superior desktop */
+#menu-superior{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0rem 2rem !important;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.529);
+}
+
+#menu-superior ul{
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+    margin: 0;
+}
+
+#menu-superior ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 10px black;
+}
+/* Menu superior desktop */
+
+/* Menu Mobile */
+#menu-mobile{
+    display: none;
+}
+
+#navegacao-mobile{
+    width: 60%;
+    height: 100vh;
+    background-color: #0000009f;
+    position: absolute;
+    display: none;
+}
+
+#navegacao-mobile ul{
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#navegacao-mobile li{
+  padding: 1rem 0rem;
+
+}
+
+#navegacao-mobile a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+/* Menu Mobile */
+
+/* Banner e titulo da página*/
+.estilo-titulo{
+    color: #C5440D;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 4.8rem;
+}
+
+.principal-banner-text-container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-top: 20rem;
+    padding-left: 10rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.principal-banner-text-container h1{
+    font-size: 6rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+
+}
+
+.principal-banner-text-container p{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    
+}
+/* Banner e titulo da página */
+
+/* Rodapé */
+ #rodape{
+    background-color: #045489;
+    color: white;
+    
+ }
+
+ #rodape p{
+    font-weight: 500;
+    font-size: 1.2rem;
+ }
+
+ #rodape ul{
+    list-style: none;
+    margin: 0;
+    margin: 1rem 0rem;
+    
+    padding: 0;
+    width: 250px;
+    height: auto;
+ }
+
+ #rodape li{
+    margin-bottom: 0.4rem;
+ }
+
+ #rodape a{
+    text-decoration: none;
+    color: white;
+ }
+
+ #rodape a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 0.4rem;
+    transition: 0.3s;
+    font-weight: 600;
+ }
+
+/* Rodapé */
+/* Todas as páginas */
+
+
+/* Estlização página Home */
+#principal-container{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/fundo/fundo01.png");
+}
+
+#container-sobre-nos{
+    padding: 4rem  0rem;
+}
+
+#container-produtos img{
+    margin-bottom: 2rem;
+}
+
+#container-sobre-nos img{
+    width: 560px;
+}
+
+#container-sobre-nos p{
+    width: 570px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: justify;
+}
+/* Estlização página Home */
+
+
+/* Estilização página de Produtos */
+#produtos-container{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/fundo/fundo02.png");
+}
+
+/* Cards de produtos */
+.card{
+    text-align: center;
+    align-items: center;
+
+}
+
+.card img{
+    width: 300px;
+}
+
+.card h5{
+    padding-top: 1rem;
+}
+
+.card a{
+    background-color: #C5440D;
+    width: 300px;
+}
+
+.card a:hover{
+    background-color: #dc5820;
+}
+/* Cards de produtos */
+
+/* Estilização página de Produtos */
+
+/* Responsivo para Smarphone */
+ @media screen and (max-width:768px){
+
+    /* Menu Resposivo */
+    #menu-superior ul{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: block;
+    }
+    /* Menu Resposivo */
+
+    /* Banner Resposivo */
+    .principal-banner-text-container{
+        padding-left: 2rem;
+    }
+
+    .principal-banner-text-container h1{
+        font-size: 4rem;
+    }
+
+    .principal-banner-text-container p{
+        font-size: 1.4rem;
+    }
+    /* Banner Resposivo */
+
+    .estilo-titulo{
+        font-size: 2.8rem;
+    }
+
+    .cards-aquario img{
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+
+    #container-sobre-nos img{
+        width: 400px;
+    }
+
+    #container-sobre-nos p{
+        width: 400px;
+        font-size: 1rem;
+        text-align: justify;
+    
+    }
+ }
+/* Responsivo para Smarphone */
+
+/* Resposivo para Tablets */
+ @media screen and (min-width:768px) and (max-width: 1200px){
+
+        /* Menu Resposivo */
+        #menu-superior ul{
+            display: none;
+        }
+    
+        #menu-mobile{
+            display: block;
+        }
+        /* Menu Resposivo */
+
+        /* Banner Responsivo */
+        .principal-banner-text-container{
+            padding-left: 2rem;
+        }
+    
+        .principal-banner-text-container h1{
+            font-size: 5rem;
+        }
+    
+        .principal-banner-text-container p{
+            font-size: 2.4rem;
+        }
+        /* Banner Responsivo */
+
+        .estilo-titulo{
+            font-size: 4rem;
+        }
+    
+        .cards-aquario img{
+            width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        #container-sobre-nos img{
+            width: 480px;
+        }
+
+        #container-sobre-nos p{
+            width: 480px;
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        
+ }
+/* Resposivo para Tablets */
+
