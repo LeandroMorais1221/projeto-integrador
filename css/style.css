@@ -11,6 +11,7 @@
 
 body{
     font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
 }
 
 /* Menu superior desktop */
@@ -45,9 +46,9 @@ body{
 }
 
 #navegacao-mobile{
-    width: 60%;
+    width: 50%;
     height: 100vh;
-    background-color: #0000009f;
+    background-color: #000000ba;
     position: absolute;
     display: none;
 }
@@ -79,6 +80,36 @@ body{
     font-size: 4.8rem;
 }
 
+.estilo-titulo-azul{
+    color: #056BAF;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 4.8rem;
+}
+
+.estilo-paragrafo-container{
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: justify;
+    width: 570px;
+
+}
+
+.estilo-botao{
+    background-color: #056baf;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 250px !important;
+    font-weight: 500;
+}
+
+.estilo-botao:hover{
+    background-color: #045489;
+}
+
+
 .principal-banner-text-container{
     display: flex;
     flex-direction: column;
@@ -98,7 +129,7 @@ body{
 }
 
 .principal-banner-text-container p{
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 0.1rem;
     margin: 0;
     
@@ -152,7 +183,7 @@ body{
 #principal-container{
     width: 100%;
     height: 800px;
-    background-image: url("../img/fundo/fundo01.png");
+    background-image: url("../img/fundo/fundo03.png");
 }
 
 #container-sobre-nos{
@@ -169,9 +200,15 @@ body{
 
 #container-sobre-nos p{
     width: 570px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: justify;
+}
+
+#container-nossos-diferenciais{
+    background-color: #F3F3F3;
+}
+
+#container-nossos-diferenciais img{
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
 }
 /* Estlização página Home */
 
@@ -241,21 +278,37 @@ body{
         font-size: 2.8rem;
     }
 
+    .estilo-titulo-azul{
+        font-size: 2.8rem;
+
+    }
+
+    .estilo-paragrafo-container{
+        font-size: 1.2rem;
+        width: 300px;
+    }
+
     .cards-aquario img{
         width: 300px;
         margin-bottom: 2rem;
     }
 
-    #container-sobre-nos img{
-        width: 400px;
+    #container-sobre-nos p{
+        width: 350px;
     }
 
-    #container-sobre-nos p{
-        width: 400px;
-        font-size: 1rem;
-        text-align: justify;
-    
+    #container-sobre-nos img{
+        width: 350px;
     }
+
+    #container-nossos-diferenciais p{
+        width: 350px;
+    }
+
+    #container-nossos-diferenciais img{
+        width: 350px;
+    }
+    
  }
 /* Responsivo para Smarphone */
 
@@ -304,7 +357,6 @@ body{
             font-size: 1.2rem;
             text-align: justify;
         }
-
         
  }
 /* Resposivo para Tablets */

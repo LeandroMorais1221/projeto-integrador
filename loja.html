@@ -24,13 +24,7 @@
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">Serviços</a>
-                </li>
-                <li>
                     <a href="./loja.html">Produtos</a>
-                </li>
-                <li>
-                    <a href="">Diferenciais</a>
                 </li>
                 <li>
                     <a href="">Galeria</a>
@@ -38,8 +32,10 @@
                 <li>
                     <a href="">Contato</a>
                 </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping fa" style="color: white;" id="botao-carrinho"></i>
+                </li>
             </ul>
-            
             <div id="menu-mobile">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
             </div>
@@ -73,7 +69,7 @@
         <div class="container-fluid p-0" id="produtos-container">
             <div class="principal-banner-text-container">
                 <h1>Produtos</h1>
-                <p>Descubra produtos essenciais <br> e de qualidade</p>
+                <p>Descubra produtos essenciais e de qualidade</p>
             </div>
         </div>
        
@@ -169,10 +165,10 @@
 
     <footer class="container-fluid" id="rodape">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-xl-2  d-flex">
-                <nav>
-                    <p>Nossa Loja</p>
+            <div class="col-12 col-sm-6 col-xl-2">
+                <nav class="d-flex justify-content-center">
                     <ul>
+                        <p>Nossa Loja</p>
                         <li>Rua Pico Itapevi, 206 - Alto da Ponte</li>
                         <li>São Paulo - SP - 12214-340</li>
                         <li>(12) 7070-7070</li>
@@ -182,10 +178,10 @@
 
             </div>
 
-            <div class="col-12 col-md-6 col-xl-2 d-flex">
-                <nav>
-                    <p>Hoário de Funcionamento</p>
+            <div class="col-12 col-sm-6 col-xl-2">
+                <nav class="d-flex justify-content-center">
                     <ul>
+                        <p>Horário de Funcionamento</p>
                         <li>Seg. a Sex: 10:00 às 20:00</li>
                         <li>Sáb: 10:00 às 16:00</li>
                         <li>Dom: 10:00 às 18:00</li>
@@ -194,10 +190,10 @@
 
             </div>
 
-            <div class="col-12 col-md-6 col-xl-2  d-flex">    
-                <nav>
-                    <p>Detalhes</p>
-                    <ul>
+            <div class="col-12 col-sm-6 col-xl-2">    
+                <nav class="d-flex justify-content-center">
+                    <ul id="detalhes">
+                        <p>Detalhes</p>
                         <li>
                             <a href="">Quem Somos</a>
                         </li>
@@ -214,14 +210,17 @@
                 </nav>
 
             </div>
-
-            <div class="col-12 col-md-6 col-xl-2  d-flex">
-                <nav>
-                    <p>Métodos de Pagementos <br> Aceitos</p>
-                    <img src="./img/rodape/pagementos.jpg" alt="">
+            
+            <div class="col-12 col-sm-6 col-xl-3">
+                <nav class="d-flex justify-content-center">
+                    <ul>
+                        <li><p>Métodos de Pagementos <br> Aceitos</p></li>
+                        <i><img src="./img/rodape/pagementos.jpg" alt=""></i>
+                    </ul>
                 </nav>
-
             </div>
+
+            
         </div>
     </footer>
 
@@ -229,7 +228,9 @@
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <script>
+        
         AOS.init();
       </script>
   </body>
