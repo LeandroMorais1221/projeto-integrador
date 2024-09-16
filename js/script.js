@@ -10,7 +10,7 @@ menuHamburguer.addEventListener('click', ()=>{
     }
     else{
         navegacaoMobile.style.display = 'block';
-        menuHamburguer.innerHTML = '<i class="fa-solid fa-x" style="color: #ffffff;"></i>'
+        menuHamburguer.innerHTML = '<i class="fa-solid fa-x 4" style="color: #ffffff;"></i>'
         document.body.style.position = "fixed";
     }
 }

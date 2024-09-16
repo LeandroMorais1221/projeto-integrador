@@ -210,6 +210,14 @@ body{
     border-top-right-radius: 4rem;
     border-bottom-left-radius: 4rem;
 }
+
+#cards-diferenciais img{
+    border-radius: 100%;
+}
+
+#cards-diferenciais p{  
+    max-width: 400px;
+}
 /* Estlização página Home */
 
 
@@ -257,6 +265,7 @@ body{
 
     #menu-mobile{
         display: block;
+        
     }
     /* Menu Resposivo */
 
@@ -307,6 +316,10 @@ body{
 
     #container-nossos-diferenciais img{
         width: 350px;
+    }
+
+    #cards-diferenciais img{
+        width: 200px;
     }
     
  }
