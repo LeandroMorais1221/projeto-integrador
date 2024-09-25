@@ -28,15 +28,29 @@ body{
 
 #menu-superior ul{
     display: flex;
-    gap: 2.4rem;
     list-style: none;
     margin: 0;
+    gap: 0.7rem;
 }
 
 #menu-superior ul a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-shadow: 4px 4px 10px black;
+}
+
+#menu-superior ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+}
+
+
+#menu-superior ul a:hover{
+    font-size: 1.1rem;
+    transition: 0.5s;
 }
 /* Menu superior desktop */
 
@@ -46,29 +60,20 @@ body{
 }
 
 #navegacao-mobile{
-    width: 50%;
-    height: 100vh;
-    background-color: #000000ba;
-    position: absolute;
-    display: none;
+    width: 55%;
+}
+#navegacao-mobile nav ul{
+    list-style: none;
+    padding: 0;
 }
 
-#navegacao-mobile ul{
-    list-style-type: none;
-    padding: 1rem;
-    font-size: 1.2rem;
-    font-weight: 400;
+#navegacao-mobile nav ul li{
+    padding-bottom: 0.8rem;
 }
 
-#navegacao-mobile li{
-  padding: 1rem 0rem;
-
-}
-
-#navegacao-mobile a{
+#navegacao-mobile nav ul a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    
+    color: black;
 }
 /* Menu Mobile */
 
@@ -81,7 +86,7 @@ body{
 }
 
 .estilo-titulo-azul{
-    color: #056BAF;
+    color: #0D6EFD;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 0.1rem;
     font-size: 4.8rem;
@@ -96,17 +101,16 @@ body{
 }
 
 .estilo-botao{
-    background-color: #056baf;
+    background-color: #0D6EFD;
     padding: 1rem;
     color: white;
     text-decoration: none;
     text-align: center;
     width: 250px !important;
-    font-weight: 500;
 }
 
 .estilo-botao:hover{
-    background-color: #045489;
+    background-color: #0757cf;
 }
 
 
@@ -218,6 +222,24 @@ body{
 #cards-diferenciais p{  
     max-width: 400px;
 }
+
+#container-entre-em-contato{
+    background-color: #F3F3F3 !important;
+}
+
+#formulario-contato{
+    background-color: white;
+}
+
+form label{
+    font-weight: 500;
+}
+
+#formulario-contato form{
+    margin: 4.4rem 1.4rem;
+}
+
+
 /* Estlização página Home */
 
 
@@ -251,9 +273,18 @@ body{
 .card a:hover{
     background-color: #dc5820;
 }
-/* Cards de produtos */
 
+.card-carrinho a{
+    width: 100px;
+    background: #DC3545;
+}
+
+.card-carrinho a:hover{
+    background: #f5384b;
+}
+/* Cards de produtos */
 /* Estilização página de Produtos */
+
 
 /* Responsivo para Smarphone */
  @media screen and (max-width:768px){
@@ -321,6 +352,14 @@ body{
     #cards-diferenciais img{
         width: 200px;
     }
+
+    #container-entre-em-contato img{
+        width: 300px;
+    }
+
+    #formulario-contato form{
+        margin: 1.4rem 1rem;
+    }
     
  }
 /* Responsivo para Smarphone */
@@ -373,4 +412,3 @@ body{
         
  }
 /* Resposivo para Tablets */
-

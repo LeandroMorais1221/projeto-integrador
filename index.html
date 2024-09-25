@@ -26,7 +26,7 @@
                     <a href="#container-sobre-nos">Sobre Nós</a>
                 </li>
                 <li>
-                    <a href="#container-nossos-diferenciais">Nossos Diferencias</a>
+                    <a href="#container-nossos-diferenciais">Diferencias</a>
                 </li>
                 <li>
                     <a href="">Serviços</a>
@@ -38,37 +38,50 @@
                     <a href="">Galeria</a>
                 </li>
                 <li>
-                    <a href="">Contato</a>
+                    <a href="#container-entre-em-contato">Contato</a>
                 </li>
             </ul>
             
             <div id="menu-mobile">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" data-bs-toggle="offcanvas" href="#navegacao-mobile"></i>
             </div>
         </nav>
 
-        <nav id="navegacao-mobile">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="">Serviços</a>
-                </li>
-                <li>
-                    <a href="./loja.html">Produtos</a>
-                </li>
-                <li>
-                    <a href="">Diferenciais</a>
-                </li>
-                <li>
-                    <a href="">Galeria</a>
-                </li>
-                <li>
-                    <a href="">Contato</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navegacao-mobile">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aqua Pet</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#container-sobre-nos">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="#container-nossos-diferenciais">Nossos Diferencias</a>
+                        </li>
+                        <li>
+                            <a href="">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="./loja.html">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="#container-entre-em-contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -89,11 +102,10 @@
                     <h3 class="estilo-titulo text-start">Sobre Nós</h1>
                     <p class="estilo-paragrafo-container">Bem-vindo ao Aqua Pet, o seu destino definitivo para tudo o que seu amigo de quatro patas precisa! Aqui, combinamos amor, experiência e uma vasta gama de produtos e serviços para garantir que seu pet receba o melhor em cuidado e bem-estar. Desde ração de alta qualidade e brinquedos divertidos até serviços de banho e tosa, nossa equipe apaixonada está pronta para oferecer um atendimento personalizado e atencioso. Em nosso petshop, cada visita é uma oportunidade de fortalecer o vínculo com seu animal de estimação, proporcionando a ele o que há de melhor. Venha nos visitar e descubra como podemos tornar a vida do seu pet ainda mais feliz e saudável!</p>
                 </div>
-            </div> 
-            
+            </div>  
         </section>
         
-        <section class="container-fluid" id="container-nossos-diferenciais">
+        <section class="container-fluid my-5" id="container-nossos-diferenciais">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-6 d-flex flex-column gap-4 align-items-center align-items-xl-start p-0">
@@ -163,6 +175,39 @@
             </div>
         </div>
 
+        <h1 class="estilo-titulo text-center">Entre em contato</h1>
+        <section class="container-fluid mb-5" id="container-entre-em-contato">
+            <div class="row p-0">
+                <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center mt-4">
+                    <img src="./img/entre-em-contato/dog.png" alt="">
+                </div>
+                <div class="col-12 col-xl-4" id="formulario-contato">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputNome" class="form-label">Nome</label>
+                          <input type="text" class="form-control rounded-4" id="inputNome" placeholder="Nome completo">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputTelefone" class="form-label">Telefone</label>
+                          <input type="tel" class="form-control rounded-4" id="inputTelefone" placeholder="Celular / Whatsaap">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control rounded-4" id="inputEmail" placeholder="exemplo@gmail.com">
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control rounded-4" id="textMensagem" style="height: 100px"></textarea>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary rounded rounded-5" style="width: 140px;">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                
+
+            </div>
+        </section>
+
     </main>
 
     <footer class="container-fluid" id="rodape">
@@ -226,12 +271,11 @@
         </div>
     </footer>
 
-    <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
   </body>
 
 </html>
