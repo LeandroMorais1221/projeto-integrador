@@ -19,7 +19,7 @@
 
     <header>
         <nav id="menu-superior">
-            <ul>
+            <ul class="p-0">
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
@@ -37,7 +37,14 @@
             </ul>
             
             <div id="menu-mobile">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <a href="#navegacao-mobile" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                </a>
+                
+                <a href="#carrinho-compras" data-bs-toggle="offcanvas">
+                    <i class="fa-solid fa-cart-shopping fa-lg" style="color: #ffffff;" ></i>
+                </a>
+            </li>
             </div>
         </nav>
 
@@ -46,8 +53,6 @@
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aqua Pet</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-
             <div class="offcanvas-body">
               <div>
                 <nav>
@@ -77,8 +82,6 @@
                 </nav>
               </div>
             </div>
-
-
         </div>
 
         <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho-compras">
@@ -88,13 +91,10 @@
             </div>
             <div class="offcanvas-body">
               <div class="d-flex flex-column align-items-center" id="produtos-carrinho">
-                <div class="card mb-4" style="width: 18rem;">
-                </div>
               </div>
               <h4 class="text-center mt-2"></h4>
             </div>
         </div>
-          
         
     </header>
 
@@ -262,7 +262,6 @@
             
         </div>
     </footer>
-
 
     <script src="./js/loja.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

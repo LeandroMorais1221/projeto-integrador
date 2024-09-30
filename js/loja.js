@@ -3,9 +3,6 @@ let divCarrinho = document.querySelector('#produtos-carrinho');
 let h4Total = document.querySelector('#carrinho-compras h4')
 let arrayProdutos = [];
 
-
-
-
 botaoCard.forEach((botao) =>{
     botao.setAttribute("onclick", "armazenarValores(this)");
     botao.addEventListener('click', (e)=>{
@@ -61,7 +58,7 @@ function listarItems(){
     divCarrinho.innerHTML = "";
     arrayProdutos.forEach((produto) =>{
         divCarrinho.innerHTML += `
-        <div id="produtos-carrinho">
+        <div id="produto">
             <div class="card mb-4" style="width: 18rem;">
                 <div class="card-body card-carrinho">
                     <h5 class="card-title">${produto.nome}</h5>
@@ -98,3 +95,4 @@ function excluirItem(item){
     calcularTotal();
 
 }
+
