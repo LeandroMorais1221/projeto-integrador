@@ -11,6 +11,8 @@ botaoCard.forEach((botao) =>{
 })
 
 
+
+
 function armazenarValores(item){
     let cardAtual = item.closest('.card');
     let nomeProduto = cardAtual.querySelector('.card-title').textContent;
